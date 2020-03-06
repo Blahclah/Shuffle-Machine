@@ -1,18 +1,17 @@
 from ShuffleMachine import ShuffleMachine
-from Player import Player
+from Players import Players
 
 class Table(object):
-
-    def __init__(self):
-        self.create()
-
     
+    def __init__(self, people):
+        self.people = people
+        self.deals = []
+        for j in range(len(self.people.players)):
+            self.deals.append(ShuffleMachine())
+            
+    def __str__(self,people):
+        return '[' + ','.join(str(deals) for players in self.people)
+                
+                
 
-    def bets(self):
-        bet = []
-        for i in range(numPlayers)
-            bat = int(input("Enter player" + i +"'s bet "
-            bet.append(bat)
-            
-            
     
