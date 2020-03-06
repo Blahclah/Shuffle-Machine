@@ -1,10 +1,13 @@
 from ShuffleMachine import ShuffleMachine
-from Player import Player
+from Players import Players
+from Table import Table
 
-machine1 = ShuffleMachine()
-machine1.shuffle()
-print(machine1)
 
-player1 = Player()
 
-print(player1)
+people = Players()
+
+print(people)
+
+table1 = Table(people)
+
+print(table1)
